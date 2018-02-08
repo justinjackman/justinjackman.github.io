@@ -1,0 +1,70 @@
+/* navigation menu */
+.nav {
+	border-bottom: none;
+	text-align: center
+	height: 70px;
+	line-height: 70px;
+}
+.menu {
+	margin: 0;
+	text-align: center;
+}
+.menu a {
+	clear: right;
+	margin: 0 10px;
+	line-height: 70px;
+	text-decoration: none;
+	text-align: center
+	background-color: #c9c9c9;
+    border: none;
+    padding: .6em;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    text-align: center;
+    margin: auto;
+    color: black;
+}
+
+label {
+	margin: 0 40px 0 0;
+	font-size: 26px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float: right;
+}
+#toggle {
+	display: none;
+}
+
+/* hamburger icon drop down settings*/
+
+@media only screen and (max-width: 600px) {
+	label {
+		display: block;
+		cursor: pointer;
+}
+
+.menu {
+	text-align: center:
+	width: 100%;
+	display: none;
+}
+.menu a {
+	display: block;
+	border-bottom: 1px solid #eaeaeb;
+	padding: .1em;;
+	margin: 0;
+	text-transform: uppercase;
+}
+.menu a:hover {
+	color: #f26a4e;
+}
+
+#toggle:checked + .menu {
+	display: block;
+}
